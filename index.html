@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio website of Qiwen Zheng, a Computer Science student at DCU showcasing work, interests, and contact information." />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>A website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" /> 
+</head>
+
+<body>
+
+    <main class= "main-style">
+	 <header class="page-header">  <!-- The header introduces the website and main title.-->
+            <div class="header-content">  <!-- A div groups related for styling and layout.-->
+                <h1>Qiwen Zheng</h1>
+                <p>Undergraduate · Computer Science Portfolio</p>
+            </div>
+        </header>
+        <nav class="page-nav"> <!-- Navigation bar linking to each section on the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+        <section id="about" class="about-me container">  <!-- A section divides content into meaningful blocks for readability.-->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>I am a Computer Science student at Dublin City University with a strong interest in front-end development and user-centered design.
+                     I enjoy turning ideas into interactive, responsive web experiences using technologies such as HTML, CSS, JavaScript, and React.
+                     Through academic and personal projects, I've developed skills in creating clean, efficient interfaces and collaborating in team-based environments.
+                     I’m always eager to learn new frameworks and improve both design and performance in my work.
+                     I’m currently seeking a front-end development internship where I can apply my technical knowledge, contribute to real projects, and continue growing as a creative and detail-oriented developer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container"><!-- Lists work and project experiences using HTML elements like paragraphs and lists. -->
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                <p>
+                     <strong>Web Assistant (Part time)</strong>
+                     --Assisted in updating pages, improving image alt text, and checking links for a small business website. 
+                     Contributed to simple content layouts and learned how to test across browsers (Chrome, Edge, Safari) while keeping readability in mind.
+                </p>
+                <ul>
+                     <li>Built a one-page site with semantic HTML5 sections and internal navigation.</li>
+                     <li>Practised writing concise copy and organising information for scan-ability.</li>
+                     <li>Optimised images for faster load times and clearer presentation.</li>
+                </ul> 
+                <p>
+                     <strong>Course Projects</strong> 
+                     -- Worked in a small team to create a basic landing page for a mock service. I focused on structure, accessibility labels, and consistent headings. I also explored colour contrast and typography using publicly available tools and guidelines.
+                </p>    
+                </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery container">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+				
+<figure class="an-image">
+     <img src="images/sunflower.jpg" alt="Sunflower symbolizing optimism and positive energy">
+     <figcaption class="image-caption"> 
+     The sunflower represents optimism and positivity - always facing the light.
+     </figcaption>
+</figure>                   
+
+<figure class="an-image">
+     <img src="images/kind.jpg" alt="Smiley faces symbolizing kindness and friendliness">
+     <figcaption class="image-caption">
+     Smiley cookies stand for my warm and friendly personality — I value kindness in all interactions.
+     </figcaption>
+</figure> 
+
+<figure class="an-image">
+     <img src="images/friendship.jpg" alt="Team members joining hands to symbolize teamwork">
+     <figcaption class="image-caption">
+     Hands together show my belief in teamwork and collaboration — success is built with others.
+     </figcaption>
+</figure> 
+				
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+                        <p>
+                            <label for="contact-name">Your name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Send My Message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="http://www.dcu.ie/">DCU 2025-2026</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Qiwen Zheng</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+			</p> 
+         
+        </footer>
+    </main>
+</body>
+
+</html>
